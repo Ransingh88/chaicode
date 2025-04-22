@@ -1,11 +1,23 @@
 import "./App.css"
-import PageRoutes from "./routes/PageRoutes"
 
 function App() {
   return (
     <>
-      <h1 className="text-2xl text-orange-400">chaicode</h1>
-      <PageRoutes/>
+      <div className="main_container">
+        <div className="navbar">
+          <h4>chaicode</h4>
+          <ul>
+            <li>Home</li>
+            <li>cohort</li>
+            <li>udemy</li>
+            <li>live</li>
+          </ul>
+          <div><button>login</button></div>
+        </div>
+        <div className="hero_secrion">
+          <h4 className="text-[#E05D02]">chaicode</h4>
+        </div>
+      </div>
     </>
   )
 }
