@@ -6,8 +6,12 @@ const Home = () => {
   return (
     <div className="home-main_container">
       <div className="hero_section">
-        <div>
-          <p>Trusted by 1.5M code Learner</p>
+        <div className="hero_milestone">
+          <p>
+            {" "}
+            <div className="livePoint"></div>
+            Trusted by 1.5 M code learner{" "}
+          </p>
         </div>
         <div className="hero_headContent">
           <h1>Consistency and commitment learning for coding courses</h1>
@@ -21,7 +25,7 @@ const Home = () => {
         <div className="cta">
           <button>Live cohorts</button>
         </div>
-        <div className="vdo">
+        {/* <div className="vdo">
           <div className="bggg"></div>
           <div className="vv">
             <iframe
@@ -35,7 +39,7 @@ const Home = () => {
               allowfullscreen
             ></iframe>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )

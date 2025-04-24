@@ -1,10 +1,1 @@
-.main_container {
-  @apply bg-[#0A0907] h-screen text-white;
-}
-.hero_secrion {
-  @apply container mx-auto px-4;
-}
 
-.navbar {
-  @apply flex;
-}
