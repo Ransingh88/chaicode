@@ -1,0 +1,21 @@
+.navbar-main__container {
+  @apply bg-background_glass text-primary w-full h-20 flex justify-center items-center fixed top-0 left-0 backdrop-blur-md;
+}
+.navbar {
+  @apply container mx-auto px-4 flex justify-between items-center;
+
+  & .menus > ul {
+    @apply flex items-center gap-4;
+
+    & li {
+      @apply px-2;
+    }
+  }
+}
+
+/* a.active {
+  color: red;
+}
+a.pending {
+  color: blue;
+} */

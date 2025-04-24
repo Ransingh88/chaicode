@@ -1,3 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-background: #0b0b0b;
+  --color-background_glass: #0b0b0b70;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  /* font-family: "Inter Tight", sans-serif; */
+}
+
+.light {
+  --color-primary: #e25d00; /* main brand color*/
+  --color-secondary: #aaa; /* complementary color to primary*/
+  --color-accent: #f3f3f3; /* draw attention e.g. buttons, links*/
+  --color-background: #f2f2f2; /* main surface bg*/
+  --color-background_glass: #f2f2f270;
+  --color-surface: #aaa; /* cards, sections*/
+  --color-border: #aaa; /* devider line, border*/
+  --color-text_primary: #0b0b0b; /* main content text color*/
+  --color-text_secondary: #b0b0b0; /* subtext, hints*/
+  --color-text_disabled: #aaa; /* disabled content*/
+  --color-status_success: #aaa; /* for operation success*/
+  --color-status_error: #aaa; /* for error*/
+  --color-status_warning: #aaa; /* for alert/warning*/
+  --color-status_info: #aaa; /* for notification/info*/
+  --color-highlight: #aaa; /* for emphasized text or UI element*/
+  --color-muted: #aaa; /* soft text/background*/
+  --color-overlay: #aaa; /* backdrop layer color e.g. modal, popups*/
+  --color-shadow: #aaa; /* box shadow color*/
+}
+
+.dark {
+  --color-primary: #e25d00;
+  --color-secondary: #aaa;
+  --color-accent: #aaa;
+  --color-background: #0b0b0b; /* #0a0907 */
+  --color-background_glass: #0b0b0b30;
+  --color-surface: #aaa;
+  --color-border: #aaa;
+  --color-text_primary: #f2f2f2;
+  --color-text_secondary: #aaa;
+  --color-text_disabled: #aaa;
+  --color-status_success: #aaa;
+  --color-status_error: #aaa;
+  --color-status_warning: #aaa;
+  --color-status_info: #aaa;
+  --color-highlight: #aaa;
+  --color-muted: #aaa;
+  --color-overlay: #aaa;
+  --color-shadow: #aaa;
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Or height: 0 for vertical scroll */
+  display: none;
+}

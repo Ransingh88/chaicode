@@ -1,24 +1,15 @@
 import "./App.css"
+import Navbar from "./components/navbar/Navbar"
+import PageRoute from "./routes/PageRoute"
+import Footer from "./components/footer/Footer"
 
 function App() {
   return (
-    <>
-      <div className="main_container">
-        <div className="navbar">
-          <h4>chaicode</h4>
-          <ul>
-            <li>Home</li>
-            <li>cohort</li>
-            <li>udemy</li>
-            <li>live</li>
-          </ul>
-          <div><button>login</button></div>
-        </div>
-        <div className="hero_secrion">
-          <h4 className="text-[#E05D02]">chaicode</h4>
-        </div>
-      </div>
-    </>
+    <div className="">
+      <Navbar />
+      <PageRoute />
+      <Footer />
+    </div>
   )
 }
 
