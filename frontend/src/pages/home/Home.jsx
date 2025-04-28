@@ -1,30 +1,42 @@
 import React from "react"
 import "./home.css"
-// import { motion } from "motion/react"
+import { motion } from "motion/react"
+
+const fadeInUpAnimation = {
+  hidden: { opacity: 0, y: 50 },
+  show: { opacity: 1, y: 0, transition: { duration: 1, staggerChildren: 0.5 } },
+}
 
 const Home = () => {
   return (
     <div className="home-main_container">
-      <div className="hero_section">
+      <motion.div
+        className="hero_section"
+        initial="hidden"
+        animate="show"
+        variants={fadeInUpAnimation}
+      >
         <div className="hero_milestone">
-          <p>
+          <motion.p variants={fadeInUpAnimation}>
             {" "}
             <div className="livePoint"></div>
             Trusted by 1.5 M code learner{" "}
-          </p>
+          </motion.p>
         </div>
         <div className="hero_headContent">
-          <h1>Consistency and commitment learning for coding courses</h1>
-          <p>
+          <motion.h1 variants={fadeInUpAnimation}>
+            Consistency and commitment learning for coding courses
+          </motion.h1>
+          <motion.p variants={fadeInUpAnimation}>
             Content is everywhere, we provide a learning experience that is
             unmatched. Bounties, peer learning peer, code reviews, vertual
             hostel, alumni network, group projects and so many other activities
             to keep you on.
-          </p>
+          </motion.p>
         </div>
-        <div className="cta">
+        <motion.div className="cta" variants={fadeInUpAnimation}>
           <button>Live cohorts</button>
-        </div>
+        </motion.div>
         {/* <div className="vdo">
           <div className="bggg"></div>
           <div className="vv">
@@ -40,7 +52,7 @@ const Home = () => {
             ></iframe>
           </div>
         </div> */}
-      </div>
+      </motion.div>
     </div>
   )
 }
